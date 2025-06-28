@@ -1,36 +1,30 @@
 <body>
     <link rel="stylesheet" href="style.css">
     <div class="container">
-        <div class="logo-container">
-            <img src="https://th.bing.com/th/id/OIP.Y0xN-hJbwpbO1BcYeqvqMwHaFz?rs=1&pid=ImgDetMain"
-                alt="Logo ESG UQAM" width="200" height="50" class="logo">
-        </div>
         <div class="header">
+            <div class="logo-container">
+                <img src="https://th.bing.com/th/id/OIP.Y0xN-hJbwpbO1BcYeqvqMwHaFz?rs=1&pid=ImgDetMain" alt="Logo ESG UQAM" width="100" height="50" class="logo">
+            </div>
             <h1>Annuaire Alumni</h1>
             <p class="subtitle">Executive MBA ESG UQAM</p>
         </div>
 
         <!-- Search and Filter Section -->
         <div class="search-container">
-            <label for="filter" style="margin-right:8px;font-weight:bold;align-self:center;">Option de
-                recherche:</label>
-            <select id="filter" class="filter-select" style="width:160px;margin-right:8px;">
-                <option value="">Aucun filtre</option>
+            <input type="text" id="search" class="search-input" placeholder="Rechercher...">
+            <select id="filter" class="filter-select">
+                <option value="">Sélectionner un filtre</option>
                 <option value="promo">Année</option>
                 <option value="cohorte">Cohorte</option>
                 <option value="entreprise">Entreprise</option>
                 <option value="poste">Poste en entreprise</option>
             </select>
-            <select id="filter-value" class="filter-select" style="width:160px;margin-right:8px;display:none;"></select>
-            <input type="text" id="search" class="search-input" placeholder="Rechercher..."
-                style="max-width:200px;flex:none;">
         </div>
 
         <div class="cohorte-section">
             <h2 class="cohorte-title">COHORTE 1</h2>
             <div class="cards">
-                <div class="card" data-promo="2014" data-cohorte="1" data-entreprise="BEKAM CONSEIL"
-                    data-poste="Gérant">
+                <div class="card" data-promo="2014" data-cohorte="1" data-entreprise="BEKAM CONSEIL" data-poste="Gérant">
                     <div class="row right">
                         <div class="image-box"><span>Photo</span></div>
                         <div class="down-info">
